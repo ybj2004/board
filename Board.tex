@@ -1,0 +1,58 @@
+﻿\documentclass{board}
+
+% 设置图形文件的搜索路径
+\graphicspath{{figures/}}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面内容 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前言部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \frontmatter
+  % 目录
+  \tableofcontents
+  % 表格目录
+  \listoftables
+  % 插图目录
+  \listoffigures
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \mainmatter
+ \part{2013年工作回顾}
+  \setcounter{page}{1}
+%  \input{data/chapter1}       %第1章
+ % \input{data/chapter2}       %第2章
+  \input{data/chapter3}       %第3章
+ % \input{data/chapter4}       %第4章
+ \part{2014年工作安排}
+%  \input{data/chapter5}       %第5章
+ % \input{data/chapter6}       %第6章
+%  \input{data/chapter7}       %第7章
+%  \input{data/chapter8}       %第8章
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 附件部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %\backmatter
+
+  % 附录
+%\appendix
+% \input{data/appendix1} 
+% \input{data/appendix2} 
+ % 致谢
+%  \include{chapter/thanks}
+
+  % 发表文章目录
+%  \include{chapter/pub}
+      
+
+\end{document}
