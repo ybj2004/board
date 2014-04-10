@@ -27,9 +27,12 @@
 \RequirePackage[table]{xcolor}        % 支持表格交替颜色,需要在 documentclass 的选项中增加 table
 \RequirePackage{colortbl}               %单元格加背景
 \RequirePackage{enumerate}             %用于item中识别序号（1）（2）等等
-\RequirePackage{threeparttable}   %%%表注
-\RequirePackage{background}  %%水印
+\RequirePackage{threeparttable}   %% 表格添加注解
+%\RequirePackage{background}  %%水印
+\RequirePackage{framed} % 文本加背景
+
 \RequirePackage{tikz}
+\usetikzlibrary{arrows,chains}
 
 \predisplaypenalty   = \z@
 \postdisplaypenalty  = \z@
@@ -47,6 +50,7 @@
 \hypersetup{
   linktoc=all,
   pdfstartview=FitH,
+  bookmarksopen=true,
   pdfinfo={
     Title   = {\@title},
     Author  = {\@author},
@@ -61,6 +65,7 @@
 %          top=30mm, bindingoffset=5mm, headheight=10mm, headsep=6mm, foot=5mm}
 \geometry{papersize={210mm,297mm}, textheight=190mm,textwidth=140mm,left=25mm,right=25mm,
 top=35mm, bottom=35mm}
+
 
 \setmainfont{TeX Gyre Pagella}
 
