@@ -10,6 +10,7 @@
 
 \LoadClass[12pt,a4paper,openany,fntef,nofonts]{ctexbook}
 
+\RequirePackage{fontspec,xunicode,xltxtra}
 \RequirePackage[xetex]{geometry}
 \RequirePackage[perpage,stable,bottom]{footmisc}
 \RequirePackage{quoting,needspace,afterpage,varwidth,pifont}
@@ -67,7 +68,7 @@
 top=35mm, bottom=35mm}
 
 
-\setmainfont{TeX Gyre Pagella}
+
 
 
 
@@ -82,7 +83,10 @@ top=35mm, bottom=35mm}
  KaiMingPunct+ = {：；},
 }
 
-%\defaultCJKfontfeatures{GB18030=*}
+% set Western fonts
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
 
 \setCJKmainfont[
      BoldFont=方正黑体简体,
@@ -159,7 +163,7 @@ top=35mm, bottom=35mm}
        \end{center}
      }
     \parbox[t][12cm][b]{\textwidth}{
-      \begin{center} {\xiaoer \fzkai 二零一四年四月 $\cdot$ 望江宾馆 } \end{center}
+      \begin{center} {\xiaoer \fzkai 二零一四年四月} \end{center}
      }
     \end{center}
  \clearpage
