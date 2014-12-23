@@ -16,8 +16,15 @@
 \RequirePackage{quoting,needspace,afterpage,varwidth,pifont}
 \RequirePackage[pagestyles,explicit,clearempty,outermarks]{titlesec}
 \RequirePackage[titlesec]{interfaces}
-\RequirePackage[xetex, bookmarksnumbered, pdfstartview={XYZ null null 1}, pdfborder=001,
-                pdfpagemode=UseNone, pdfprintscaling=None]{hyperref}
+%\RequirePackage[xetex, bookmarksnumbered, pdfstartview={XYZ null null 1}, pdfborder=001,
+%                pdfpagemode=UseNone, pdfprintscaling=None]{hyperref}
+
+\RequirePackage[
+    pdfstartview=FitB,%
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    pdfborder=001]{hyperref}
+
 \RequirePackage{graphicx,psfrag}     % 图形宏包
 \RequirePackage{subfigure}
 \RequirePackage{multirow}            %使用multirow必须加载该package
